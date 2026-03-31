@@ -1,9 +1,5 @@
 # 🌐 Personal Portfolio Website
 
-<p align="center">
-  <img src="Assets/screenshot.png" alt="Portfolio Preview" width="800"/>
-</p>
-
 ## 🚀 About the Project
 
 This is my personal portfolio website built to showcase my skills, projects, and experience as a **Full Stack MERN Developer**.
