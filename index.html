@@ -1,0 +1,966 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Full Stack Developer — personal portfolio"
+    />
+    <title>Portfolio | Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="nav__brand" href="#hero">Portfolio</a>
+        <button
+          type="button"
+          class="nav__toggle"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Open menu"
+        >
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+        </button>
+        <ul class="nav__list" id="nav-menu">
+          <li>
+            <a class="nav__link" href="#hero" data-section="hero">Home</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#about" data-section="about">About</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#projects" data-section="projects"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a class="nav__link" href="#skills" data-section="skills">Skills</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#resume" data-section="resume">Resume</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#contact" data-section="contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Toggle dark mode"
+          title="Toggle theme"
+        ></button>
+      </div>
+    </header>
+    <main>
+      <section
+        class="section section--hero hero"
+        id="hero"
+        aria-labelledby="hero-title"
+      >
+        <div class="hero__bg">
+          <span class="hero__orb hero__orb--1"></span>
+          <span class="hero__orb hero__orb--2"></span>
+          <span class="hero__orb hero__orb--3"></span>
+        </div>
+        <div class="container hero__inner">
+          <p class="hero__eyebrow reveal-up">Hello, I'm</p>
+          <h1 id="hero-title" class="hero__name reveal-up">SANJITH KUMAR</h1>
+          <p class="hero__role reveal-up">Full Stack MERN Developer</p>
+          <p class="hero__tagline reveal-up">
+            I build scalable full-stack web applications using React, Node.js,
+            Express, and MongoDB.
+          </p>
+          <div class="hero__actions reveal-up">
+            <a class="btn btn--primary" href="#projects">View Projects</a>
+            <a class="btn btn--ghost" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <a class="hero__scroll" href="#about" aria-label="Scroll to about">
+          <svg
+            class="hero__scroll-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path
+              d="M6 9l6 6 6-6"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              class="hero__scroll-icon-stroke"
+              d="M6 15l6 6 6-6"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </section>
+      <section
+        class="section section--about"
+        id="about"
+        aria-labelledby="about-title"
+      >
+        <div class="container">
+          <header class="section-header">
+            <h2 id="about-title" class="section-title">About Me</h2>
+            <p class="section-subtitle">
+              A snapshot of who I am and what I build.
+            </p>
+          </header>
+          <div class="about__grid">
+            <div class="about__photo reveal-up">
+              <img
+                class="about__photo-img"
+                src="Assets/IMG_20260331_195416.jpg-Photoroom.png"
+                alt="Profile photo"
+              />
+            </div>
+            <div>
+              <p class="about__bio reveal-up">
+                Full Stack MERN Developer skilled in building scalable web
+                applications using React, Node.js, Express, and MongoDB.
+                Developed a Twitter (X) clone with authentication, REST APIs,
+                and real-time features. Strong in problem-solving and Data
+                Structures & Algorithms.
+              </p>
+              <div class="skill-cards">
+                <article class="skill-card reveal-up">
+                  <div class="skill-card__icon" aria-hidden="true">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.75"
+                    >
+                      <path
+                        d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="skill-card__title">Frontend</h3>
+                  <p class="skill-card__text">
+                    HTML, CSS, React, Tailwind CSS, Responsive UI development.
+                  </p>
+                </article>
+                <article class="skill-card reveal-up">
+                  <div class="skill-card__icon" aria-hidden="true">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.75"
+                    >
+                      <path d="M4 9h16M4 15h16M10 3L8 21M16 3l-2 18" />
+                    </svg>
+                  </div>
+                  <h3 class="skill-card__title">Backend</h3>
+                  <p class="skill-card__text">
+                    Node.js, Express.js, REST APIs, JWT authentication.
+                  </p>
+                </article>
+                <article class="skill-card reveal-up">
+                  <div class="skill-card__icon" aria-hidden="true">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.75"
+                    >
+                      <circle cx="12" cy="12" r="3" />
+                      <path
+                        d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="skill-card__title">Tools</h3>
+                  <p class="skill-card__text">
+                    Git, GitHub, Postman, VS Code, Netlify, Vercel, Render.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section section--projects"
+        id="projects"
+        aria-labelledby="projects-title"
+      >
+        <div class="container">
+          <header class="section-header">
+            <h2 id="projects-title" class="section-title">Projects</h2>
+            <p class="section-subtitle">
+              Real-world projects showcasing my skills in full-stack development
+              and UI design.
+            </p>
+          </header>
+          <div class="projects-grid">
+            <article class="project-card reveal-up">
+              <div class="project-card__image">
+                <img
+                  class="project-card__img"
+                  src="Assets/X Allgemeine Geschäftsbedingungen.jpg"
+                  alt="Analytics dashboard"
+                  width="600"
+                  height="360"
+                />
+                <div class="project-card__overlay">
+                  <div
+                    class="project-card__icon-row"
+                    role="group"
+                    aria-label="Project links"
+                  >
+                    <a
+                      class="project-card__icon-btn"
+                      href="https://github.com/Sanjith002/X-Clone.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="View source on GitHub"
+                    >
+                      <svg
+                        width="17"
+                        height="17"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      class="project-card__icon-btn"
+                      href="https://x-clone02.pages.dev/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Open live site"
+                    >
+                      <svg
+                        width="17"
+                        height="17"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.25"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        />
+                        <path d="M15 3h6v6" />
+                        <path d="M10 14 21 3" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">X (Twitter) Clone</h3>
+                <p class="project-card__desc">
+                  Full-stack social media application with authentication,
+                  posts, likes, comments, and real-time features.
+                </p>
+                <ul class="project-card__tags">
+                  <li>React</li>
+                  <li>Node.js</li>
+                  <li>MongoDB</li>
+                  <li>Tailwind CSS</li>
+                </ul>
+              </div>
+            </article>
+            <article class="project-card reveal-up">
+              <div class="project-card__image">
+                <img
+                  class="project-card__img"
+                  src="Assets/Povinné informace na produktových a checkout stránkách.jpg"
+                  alt="API gateway"
+                  width="600"
+                  height="360"
+                />
+                <div class="project-card__overlay">
+                  <div
+                    class="project-card__icon-row"
+                    role="group"
+                    aria-label="Project links"
+                  >
+                    <a
+                      class="project-card__icon-btn"
+                      href="https://github.com/Sanjith002/ecommerce-website.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="View source on GitHub"
+                    >
+                      <svg
+                        width="17"
+                        height="17"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      class="project-card__icon-btn"
+                      href="https://baggyfashion.pages.dev/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Open live site"
+                    >
+                      <svg
+                        width="17"
+                        height="17"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.25"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        />
+                        <path d="M15 3h6v6" />
+                        <path d="M10 14 21 3" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">E-Commerce Website</h3>
+                <p class="project-card__desc">
+                  Responsive e-commerce frontend with dynamic product listing
+                  and interactive UI.
+                </p>
+                <ul class="project-card__tags">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+              </div>
+            </article>
+            <article class="project-card reveal-up">
+              <div class="project-card__image">
+                <img
+                  class="project-card__img"
+                  src="Assets/Tap here to know the status of your Swiggy order_.jpg"
+                  alt="Design system"
+                  width="600"
+                  height="360"
+                />
+                <div class="project-card__overlay">
+                  <div
+                    class="project-card__icon-row"
+                    role="group"
+                    aria-label="Project links"
+                  >
+                    <a
+                      class="project-card__icon-btn"
+                      href="https://github.com/Sanjith002/swiggy-tailwind-clone.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="View source on GitHub"
+                    >
+                      <svg
+                        width="17"
+                        height="17"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      class="project-card__icon-btn"
+                      href="https://swiggy-tailwind-clone.pages.dev/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Open live site"
+                    >
+                      <svg
+                        width="17"
+                        height="17"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.25"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        />
+                        <path d="M15 3h6v6" />
+                        <path d="M10 14 21 3" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">Swiggy Clone UI</h3>
+                <p class="project-card__desc">
+                  Pixel-perfect desktop UI clone of Swiggy built with Tailwind
+                  CSS, focusing on layout design, spacing, and component
+                  structuring.
+                </p>
+                <ul class="project-card__tags">
+                  <li>HTML</li>
+                  <li>Tailwind CSS</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section section--skills"
+        id="skills"
+        aria-labelledby="skills-title"
+      >
+        <div class="container">
+          <header class="section-header">
+            <h2 id="skills-title" class="section-title">Skills</h2>
+            <p class="section-subtitle">
+              Experience-based proficiency — no arbitrary percentages.
+            </p>
+          </header>
+          <div class="skills-layout">
+            <div class="skills-group" data-skill-group>
+              <h3 class="skills-group__label">Frontend</h3>
+              <ul class="skill-levels">
+                <li class="skill-level">
+                  <div class="skill-level__name">HTML / CSS</div>
+                  <div class="skill-level__meta">
+                    <div
+                      class="skill-level__meter skill-level__meter--advanced"
+                    >
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                    </div>
+                    <span class="skill-level__rank">Advanced</span>
+                  </div>
+                </li>
+                <li class="skill-level">
+                  <div class="skill-level__name">JavaScript</div>
+                  <div class="skill-level__meta">
+                    <div
+                      class="skill-level__meter skill-level__meter--intermediate"
+                    >
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                    </div>
+                    <span class="skill-level__rank">Intermediate</span>
+                  </div>
+                </li>
+                <li class="skill-level">
+                  <div class="skill-level__name">React</div>
+                  <div class="skill-level__meta">
+                    <div
+                      class="skill-level__meter skill-level__meter--intermediate"
+                    >
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                    </div>
+                    <span class="skill-level__rank">Intermediate</span>
+                  </div>
+                </li>
+                <li class="skill-level">
+                  <div class="skill-level__name">Tailwind CSS</div>
+                  <div class="skill-level__meta">
+                    <div
+                      class="skill-level__meter skill-level__meter--intermediate"
+                    >
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                    </div>
+                    <span class="skill-level__rank">Intermediate</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="skills-group" data-skill-group>
+              <h3 class="skills-group__label">Backend</h3>
+              <ul class="skill-levels">
+                <li class="skill-level">
+                  <div class="skill-level__name">Node.js</div>
+                  <div class="skill-level__meta">
+                    <div
+                      class="skill-level__meter skill-level__meter--intermediate"
+                    >
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                    </div>
+                    <span class="skill-level__rank">Intermediate</span>
+                  </div>
+                </li>
+                <li class="skill-level">
+                  <div class="skill-level__name">Express.js</div>
+                  <div class="skill-level__meta">
+                    <div
+                      class="skill-level__meter skill-level__meter--intermediate"
+                    >
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                    </div>
+                    <span class="skill-level__rank">Intermediate</span>
+                  </div>
+                </li>
+                <li class="skill-level">
+                  <div class="skill-level__name">REST APIs</div>
+                  <div class="skill-level__meta">
+                    <div
+                      class="skill-level__meter skill-level__meter--intermediate"
+                    >
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                    </div>
+                    <span class="skill-level__rank">Intermediate</span>
+                  </div>
+                </li>
+                <li class="skill-level">
+                  <div class="skill-level__name">JWT Authentication</div>
+                  <div class="skill-level__meta">
+                    <div
+                      class="skill-level__meter skill-level__meter--beginner"
+                    >
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                    </div>
+                    <span class="skill-level__rank">Beginner</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="skills-group" data-skill-group>
+              <h3 class="skills-group__label">Database</h3>
+              <ul class="skill-levels">
+                <li class="skill-level">
+                  <div class="skill-level__name">MongoDB</div>
+                  <div class="skill-level__meta">
+                    <div
+                      class="skill-level__meter skill-level__meter--intermediate"
+                    >
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                    </div>
+                    <span class="skill-level__rank">Intermediate</span>
+                  </div>
+                </li>
+                <li class="skill-level">
+                  <div class="skill-level__name">Mongoose</div>
+                  <div class="skill-level__meta">
+                    <div
+                      class="skill-level__meter skill-level__meter--intermediate"
+                    >
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                    </div>
+                    <span class="skill-level__rank">Intermediate</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="skills-group" data-skill-group>
+              <h3 class="skills-group__label">Tools</h3>
+              <ul class="skill-levels">
+                <li class="skill-level">
+                  <div class="skill-level__name">Git</div>
+                  <div class="skill-level__meta">
+                    <div
+                      class="skill-level__meter skill-level__meter--intermediate"
+                    >
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                    </div>
+                    <span class="skill-level__rank">Intermediate</span>
+                  </div>
+                </li>
+                <li class="skill-level">
+                  <div class="skill-level__name">GitHub</div>
+                  <div class="skill-level__meta">
+                    <div
+                      class="skill-level__meter skill-level__meter--intermediate"
+                    >
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                    </div>
+                    <span class="skill-level__rank">Intermediate</span>
+                  </div>
+                </li>
+                <li class="skill-level">
+                  <div class="skill-level__name">Postman</div>
+                  <div class="skill-level__meta">
+                    <div
+                      class="skill-level__meter skill-level__meter--intermediate"
+                    >
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                    </div>
+                    <span class="skill-level__rank">Intermediate</span>
+                  </div>
+                </li>
+                <li class="skill-level">
+                  <div class="skill-level__name">VS Code</div>
+                  <div class="skill-level__meta">
+                    <div
+                      class="skill-level__meter skill-level__meter--advanced"
+                    >
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                    </div>
+                    <span class="skill-level__rank">Advanced</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="skills-group" data-skill-group>
+              <h3 class="skills-group__label">Deployment</h3>
+              <ul class="skill-levels">
+                <li class="skill-level">
+                  <div class="skill-level__name">Cloudflare</div>
+                  <div class="skill-level__meta">
+                    <div
+                      class="skill-level__meter skill-level__meter--intermediate"
+                    >
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                    </div>
+                    <span class="skill-level__rank">Intermediate</span>
+                  </div>
+                </li>
+                <li class="skill-level">
+                  <div class="skill-level__name">Netlify</div>
+                  <div class="skill-level__meta">
+                    <div
+                      class="skill-level__meter skill-level__meter--intermediate"
+                    >
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                    </div>
+                    <span class="skill-level__rank">Intermediate</span>
+                  </div>
+                </li>
+                <li class="skill-level">
+                  <div class="skill-level__name">Vercel</div>
+                  <div class="skill-level__meta">
+                    <div
+                      class="skill-level__meter skill-level__meter--intermediate"
+                    >
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                    </div>
+                    <span class="skill-level__rank">Intermediate</span>
+                  </div>
+                </li>
+                <li class="skill-level">
+                  <div class="skill-level__name">Render</div>
+                  <div class="skill-level__meta">
+                    <div
+                      class="skill-level__meter skill-level__meter--intermediate"
+                    >
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                      <span class="skill-level__block"></span>
+                    </div>
+                    <span class="skill-level__rank">Intermediate</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section section--resume"
+        id="resume"
+        aria-labelledby="resume-title"
+      >
+        <div class="container">
+          <header class="section-header">
+            <h2 id="resume-title" class="section-title">Resume</h2>
+            <p class="section-subtitle">Projects</p>
+          </header>
+          <div class="resume__layout">
+            <aside class="resume__intro reveal-up">
+              <p class="resume__summary">
+                I build full-stack and frontend applications using the MERN
+                stack. My work includes real-world projects with authentication,
+                REST APIs, and responsive UI design.
+              </p>
+              <a
+                class="btn btn--primary resume__download"
+                href="SanjithKumar_Resume.pdf"
+                download
+                >Download Resume</a
+              >
+              <p class="resume__hint">
+                PDF includes my projects, technical skills, and development
+                experience.
+              </p>
+            </aside>
+            <div class="resume__main reveal-up">
+              <div class="resume__block">
+                <p class="resume__heading">
+                  Project highlights and technical skills.
+                </p>
+                <ul class="resume__timeline">
+                  <li class="resume__job">
+                    <div class="resume__job-meta">
+                      <p class="resume__role">Full Stack Developer</p>
+                      <p class="resume__company">X (Twitter) Clone</p>
+                      <p class="resume__dates">2025</p>
+                    </div>
+                    <ul class="resume__bullets">
+                      <li>
+                        Built a full-stack social media application using MERN
+                        stack.
+                      </li>
+                      <li>Implemented user authentication using JWT.</li>
+                      <li>
+                        Developed REST APIs for posts, likes, and comments.
+                      </li>
+                      <li>Integrated MongoDB for data storage.</li>
+                    </ul>
+                  </li>
+                  <li class="resume__job">
+                    <div class="resume__job-meta">
+                      <p class="resume__company">E-Commerce Website</p>
+                      <p class="resume__dates">2025</p>
+                    </div>
+                    <ul class="resume__bullets">
+                      <li>
+                        Designed a responsive e-commerce UI using HTML, CSS, and
+                        JavaScript.
+                      </li>
+                      <li>
+                        Built product listing and interactive UI components.
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="resume__job">
+                    <div class="resume__job-meta">
+                      <p class="resume__company">Swiggy Clone UI</p>
+                      <p class="resume__dates">2024</p>
+                    </div>
+                    <ul class="resume__bullets">
+                      <li>
+                        Built a desktop-only Swiggy UI clone using Tailwind CSS.
+                      </li>
+                      <li>
+                        Focused on layout structuring and modern UI design
+                        practices.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="resume__block">
+                <p class="resume__heading">Education</p>
+                <ul class="resume__timeline">
+                  <li class="resume__job resume__job--edu">
+                    <div class="resume__job-meta">
+                      <p class="resume__role">B.Com Banking and Insurance</p>
+                      <p class="resume__company">
+                        Sri Krishna Arts and Science College
+                      </p>
+                      <p class="resume__dates">2022 — 2025</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section section--contact"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="container">
+          <header class="section-header">
+            <h2 id="contact-title" class="section-title">
+              Let's Build Something Together
+            </h2>
+            <p class="section-subtitle">
+              Open to opportunities, collaborations, and freelance work.
+            </p>
+          </header>
+          <div class="contact__grid">
+            <form
+              id="contact-form"
+              class="contact__form"
+              action="https://formspree.io/f/mnjovwal"
+              method="POST"
+            >
+              <p class="contact__lead">
+                I’m currently looking for opportunities as a Full Stack
+                Developer. If you have a project, job opening, or collaboration
+                idea, feel free to reach out. I usually respond within 24 hours.
+              </p>
+              <label class="form-field">
+                <span class="form-field__label">Name</span>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Your name"
+                />
+              </label>
+              <label class="form-field">
+                <span class="form-field__label">Email</span>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="you@example.com"
+                />
+              </label>
+              <label class="form-field">
+                <span class="form-field__label">Message</span>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Your message"
+                ></textarea>
+              </label>
+              <button class="btn btn--primary" type="submit">
+                Send Message
+              </button>
+              <p id="form-status" class="form-status"></p>
+            </form>
+            <div class="contact__details">
+              <div class="contact-card reveal-up">
+                <h3>Email</h3>
+                <p>sanjithkumar0206@gmail.com</p>
+              </div>
+              <div class="contact-card reveal-up">
+                <h3>Location</h3>
+                <p>Tamil Nadu, India</p>
+              </div>
+              <div class="contact-card reveal-up">
+                <h3>GitHub</h3>
+                <a href="https://github.com/Sanjith002" target="_blank">
+                  View GitHub Profile
+                </a>
+              </div>
+              <div class="contact-card reveal-up">
+                <h3>LinkedIn</h3>
+                <a
+                  href="https://www.linkedin.com/in/sanjith-kumar-9a63a038a"
+                  target="_blank"
+                >
+                  View LinkedIn Profile
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>
+          © <span id="year"></span> Sanjith Kumar • Built with HTML, CSS &
+          JavaScript
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
